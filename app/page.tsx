@@ -11,6 +11,7 @@ interface UserData{
   username?: string;
   language_code: string;
   is_premium?: boolean;
+
 }
 
 
@@ -31,9 +32,10 @@ export default function Home() {
         userdata ?
         (
           <>
-          <h1 className="text-2xl font-bold mb-4">User Data</h1>
+          {/* mấy cái trong "" là tailwindcss đó anh coi mà chỉnh sửa, lên gpt search các hàm cơ bản */}
+          <h1 className="text-2xl font-bold mb-4">User Data</h1> 
           <ul>
-            <li>ID: {userdata.id}</li>
+            <li className="text-3xl font-bold white">ID: {userdata.id}</li>
             <li>First Name: {userdata.first_name}</li>
             <li>Last Name: {userdata.last_name}</li>
             <li>Username: {userdata.username}</li>

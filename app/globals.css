@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        /* background: url("")no-repeat; Khi nào có cái background thì thêm vô đây */
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    /* này là cho body *phần thân* của src code, dị nha :D */
+}
