@@ -35,12 +35,12 @@ export default function Home() {
           {/* mấy cái trong "" là tailwindcss đó anh coi mà chỉnh sửa, lên gpt search các hàm cơ bản */}
           <h1 className="text-2xl font-bold mb-4 hidden">User Data</h1> 
           <ul>
-            <li className="font-bold text-red-600">ID: {userdata.id}</li>
-            <li className="font-bold text-red-600">First Name: {userdata.first_name}</li>
-            <li className="font-bold text-red-600">Last Name: {userdata.last_name}</li>
-            <li className="font-bold text-red-600 hidden">Username: {userdata.username}</li>
-            <li className="font-bold text-red-600 hidden">language Code: {userdata.language_code}</li>
-            <li className="font-bold text-red-600 hidden">Is Premium: {userdata.is_premium ? 'Yes' : 'No'}</li>
+            <li className="font-bold text-red-400">ID: {userdata.id}</li>
+            <li className="font-bold text-red-400">First Name: {userdata.first_name}</li>
+            <li className="font-bold text-red-400">Last Name: {userdata.last_name}</li>
+            <li className="font-bold text-red-400 hidden">Username: {userdata.username}</li>
+            <li className="font-bold text-red-400 hidden">language Code: {userdata.language_code}</li>
+            <li className="font-bold text-red-400 hidden">Is Premium: {userdata.is_premium ? 'Yes' : 'No'}</li>
           </ul>
           </>
         ) :
