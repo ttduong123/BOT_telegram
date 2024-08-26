@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        /* background: url("")no-repeat; Khi nào có cái background thì thêm vô đây */
+        background: url("../public/bokeh-product-background.jpg") no-repeat; 
         background-position: center;
         background-attachment: fixed;
         background-size: cover;

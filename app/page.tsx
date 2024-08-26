@@ -27,7 +27,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="p-4">
+    <main className="flex items-center justify-center h-screen p-4">
       {
         userdata ?
         (
@@ -35,9 +35,9 @@ export default function Home() {
           {/* mấy cái trong "" là tailwindcss đó anh coi mà chỉnh sửa, lên gpt search các hàm cơ bản */}
           <h1 className="text-2xl font-bold mb-4">User Data</h1> 
           <ul>
-            <li className="font-bold text-red-600 mr-5">ID: {userdata.id}</li>
-            <li className="font-bold text-red-600 mr-5">First Name: {userdata.first_name}</li>
-            <li className="font-bold text-red-600 mr-5">Last Name: {userdata.last_name}</li>
+            <li className="font-bold text-red-600">ID: {userdata.id}</li>
+            <li className="font-bold text-red-600">First Name: {userdata.first_name}</li>
+            <li className="font-bold text-red-600">Last Name: {userdata.last_name}</li>
             <li className="font-bold text-red-600 hidden">Username: {userdata.username}</li>
             <li className="font-bold text-red-600 hidden">language Code: {userdata.language_code}</li>
             <li className="font-bold text-red-600 hidden">Is Premium: {userdata.is_premium ? 'Yes' : 'No'}</li>
